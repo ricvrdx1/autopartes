@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autopartes Express - Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #494d79;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            width: 50%;
+        }
+
+        nav a:last-child {
+            margin-right: 0;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .search-btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        select {
+            padding: 8px;
+            margin-left: 5px;
+            border-radius: 4px;
+        }
+
+        #carousel-container {
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #image-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: auto;
+        
+        }
+
+        #prevBtn, #nextBtn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        #nextBtn {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        #prevBtn:hover, #nextBtn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Autopartes Express</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="#">Busca tu vehículo</a>
+            <a href="#">Herramientas</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Acerca de</a>
+            
+            <label for="selectOption"></label>
+            <select id="selectOption">
+                <option value="opcion0">Categorías</option>
+                <option value="opcion1">Filtro aire</option>
+                <option value="opcion2">Filtro aceite</option>
+                <option value="opcion3">Filtro aire acondicionado</option>
+            </select>
+
+            <input  type="text" class="search-input" placeholder="Buscar...">
+            <button type="button" class="search-btn">Buscar</button>
+
+            <button style="border: transparent;"><img src="caricon.png" width="30px" height="30px" a href="carritocompra.html"></button>
+
+        </div>
+    </nav>
+
+    <div id="carousel-container" >
+        <div id="image-container">
+            <img class="carousel-image" src="promo1.png" alt="Imagen 1">
+            <img class="carousel-image" src="prom2.png" alt="Imagen 2">
+            <img class="carousel-image" src="promo3.png" alt="Imagen 3">
+        </div>
+        <div id="prevBtn" onclick="prevImage()">&#10094;</div>
+        <div id="nextBtn" onclick="nextImage()">&#10095;</div>
+    </div>
+
+    <div id="tabla"> 
+        <table>
+            <td>
+                Recomendados
+            </td>
+        </table>
+
+        <table>
+            <td>
+                Rebajas
+            </td>
+        </table>
+        
+    </div>
+
+</body>
+</html>
