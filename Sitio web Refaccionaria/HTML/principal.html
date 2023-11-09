@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="/CSS/estilos.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/Style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css">
+    
+    <title>Autopartes Express - Feed</title>  
+</head>
+
+<body style="color: #d9b3b7;">
+
+    <header class="header">
+        
+        <a href="/HTML/principal.html">
+            <img src="/imagenes/logotipo.png" alt="Logo de la Refaccionaria" width="200px" height="200px">
+        </a>  
+
+        <nav>
+            <ul>
+                <li><a href="/HTML/buscarCoche.html" style="color: black">Busca tu vehículo</a></li>
+                <li><a href="#" style="color: black">Productos</a></li>
+                <li><a href="#" style="color: black">Ofertas</a></li>
+                <li><a href="#" style="color: black">Acerca de</a></li>
+                <li><a href="carritocompra.html"><img src="/imagenes/caricon.png" width="35px" height="35px"></a></li>
+                <li><a href="/HTML/Loggin.html"><img src="/imagenes/usuario.png" width="35px" height="35px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="carousel" class="carousel slide" style="margin: 30px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  class="active" aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  class="active" aria-current="true" aria-label="Slide 3"></button>
+        </div>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/imagenes/Imagenes productos/promo1.png" class="d-block w-100" alt="...">
+        </div>
+      
+        <div class="carousel-item">
+            <img src="/imagenes/Imagenes productos/prom2.png" class="d-block w-100" alt="...">
+        </div>
+      
+        <div class="carousel-item">
+            <img src="/imagenes/Imagenes productos/promo3.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <nav id="table-container-categorias" style="margin: 25px;">
+        <div id="table-container-categorias">
+            <div class="nav-links">
+                <h2 style="color: black;">Refacciones</h2>
+    
+                <button class="nav-button" style="background-color:#dc1f31" >
+                    <img id="image-container" src="/imagenes/Imagenes productos/frenp.jpg" alt="Rebajas" width="250px" height="150px">
+                    <p style="color: rgb(255, 255, 255);">Sistema frenos</p>
+                </button>
+    
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/suspension.jpg" alt="Suspensión" width="250px" height="150px">
+                    <p style="color: rgb(255, 255, 255);">Suspensión</p>
+                </button>
+    
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/turbo.AFTMRKT.jpg" alt="AfterMarket" width="250px" height="150px">
+                    <p style="color: rgb(255, 255, 255);">Turbos</p>
+                </button>
+   
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/filtros.jpg" alt="Filtros" width="250px" height="150px">
+                    <p style="color: rgb(255, 255, 255);">Filtros</p>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="table-container-categorias">
+        <div id="table-container-categorias">
+            <div class="nav-links">
+                <h2 style="color: black;">Accesorios y Herramientas</h2>
+    
+                <button class="nav-button" style="background-color: #dc1f31;" >
+                    <img id="image-container" src="/imagenes/detallado.jpg" alt="Rebajas" width="250px" height="150px">
+                    <p style="color: white;">Detallado Automotriz</p>
+                </button>
+    
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/aleron.jpg" alt="Suspensión" width="250px" height="150px">
+                    <p style="color: white;">Alerones</p>
+                </button>
+    
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/iluminacion.jpg" alt="AfterMarket" width="250px" height="150px">
+                    <p style="color: white;">Iluminación</p>
+                </button>
+   
+                <button class="nav-button" style="background-color: #dc1f31;">
+                    <img id="image-container" src="/imagenes/Imagenes productos/tapetes.jpg" alt="Filtros" width="250px" height="150px">
+                    <p style="color: white;">Tapetes</p>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <footer>
+        <p>&copy; 2023 Autoparts Express </p>
+    </footer>
+
+</body>
+</html>
